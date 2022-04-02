@@ -28,7 +28,7 @@ body, html {
 }
 .bg-img{
 
-   
+  filter: grayscale(50%);
     background-image: url("../../../assets/images/coffeehouse.jpg");
 
   /* Center and scale the image nicely */
