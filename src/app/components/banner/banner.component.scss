@@ -1,0 +1,58 @@
+.nav-link {
+  border-radius: 0!important;
+    color: white !important;
+   
+}
+.nav-item .nav-link,.nav-item .nav-link:hover {
+  color: black !important;
+  border-radius: 0;
+  background-color: white;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    line-height: 1.5;
+    font-family: "Inconsolata", sans-serif;
+  }
+.nav-link:hover {
+    
+    color: black !important;
+    background-color: lightgray;
+   
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: white !important;
+  background-color: darkslategrey;
+  
+}
+.bg-img{
+
+   
+    background-image: url("../../../assets/images/coffeehouse.jpg");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   
+    // background-size: cover;
+    // background: url("../../../assets/images/coffeehouse.jpg") no-repeat center;
+    // height: 100%;
+}
+.form-control-lg {
+  min-height: calc(1.5em + 1rem + 2px);
+  padding: 16px 8px;
+ color: black;
+  border-radius: 0;
+}
+.form-control:focus {
+ 
+  border-color: black;
+  box-shadow: 0 0 0 0.05rem black;
+  border-radius: 2px;
+
+}
+.btn{
+  border-radius: 0;
+}
