@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BannerComponent } from './components';
 import { LayoutComponent } from './layout/layout.component';
 import {PortfolioComponent} from './pages/portfolio/portfolio.component';
 
@@ -7,8 +8,12 @@ import {PortfolioComponent} from './pages/portfolio/portfolio.component';
 const routes: Routes = [
   {
     path: '',
-  component: LayoutComponent,
-        
+  component: BannerComponent,
+  pathMatch: 'full'
+  },
+  {
+    path: 'index',
+    component: BannerComponent
   },
   {
     path: 'portfolio',
