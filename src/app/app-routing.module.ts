@@ -5,35 +5,23 @@ import {PortfolioComponent} from './pages/portfolio/portfolio.component';
 
 
 const routes: Routes = [
+  
   {
-    path: '',
-  component: BannerComponent,
-  pathMatch: 'full'
-  },
-  {
-    path: 'index',
+    path: 'cafe',
     component: BannerComponent
   },
   {
-    path: 'portfolio',
+    path: 'shop',
   component: PortfolioComponent,
        
   },
   {
     path: 'dashboard',
     loadChildren: () => import('./pages/super-admin/super-admin.module').then((m) => m.SuperAdminModule)
-  },
- 
-  {
-    path: '**',
-    redirectTo: 'super-admin',
-  },
+  }
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{
-    useHash : true
-
-  })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
