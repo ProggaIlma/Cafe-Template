@@ -1,22 +1,22 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-// import { BannerComponent } from './components';
+import { BannerComponent } from './components';
 // import { LayoutComponent } from './layout/layout.component';
 import {PortfolioComponent} from './pages/portfolio/portfolio.component';
 
 
 const routes: Routes = [
   {
-    path: 'bb',
-  component: PortfolioComponent,
+    path: '',
+  component: BannerComponent,
   pathMatch: 'full'
   },
   {
     path: 'index',
-    component: PortfolioComponent
+    component: BannerComponent
   },
   {
-    path: '',
+    path: 'portfolio',
   component: PortfolioComponent,
        
   },
@@ -27,7 +27,7 @@ const routes: Routes = [
  
   {
     path: '**',
-    redirectTo: 'index',
+    redirectTo: 'super-admin',
   },
 ];
 @NgModule({
