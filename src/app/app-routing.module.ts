@@ -8,12 +8,12 @@ import {PortfolioComponent} from './pages/portfolio/portfolio.component';
 const routes: Routes = [
   {
     path: '',
-  component: BannerComponent,
+  component: PortfolioComponent,
   pathMatch: 'full'
   },
   {
     path: 'index',
-    component: BannerComponent
+    component: PortfolioComponent
   },
   {
     path: 'portfolio',
