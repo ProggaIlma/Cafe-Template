@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BannerComponent } from './components';
+// import { BannerComponent } from './components';
 // import { LayoutComponent } from './layout/layout.component';
 import {PortfolioComponent} from './pages/portfolio/portfolio.component';
 
@@ -8,12 +8,12 @@ import {PortfolioComponent} from './pages/portfolio/portfolio.component';
 const routes: Routes = [
   {
     path: 'bb',
-  component: BannerComponent,
+  component: PortfolioComponent,
   pathMatch: 'full'
   },
   {
     path: 'index',
-    component: BannerComponent
+    component: PortfolioComponent
   },
   {
     path: '',
@@ -27,7 +27,7 @@ const routes: Routes = [
  
   {
     path: '**',
-    redirectTo: 'super-admin',
+    redirectTo: 'index',
   },
 ];
 @NgModule({
