@@ -7,7 +7,7 @@ import {PortfolioComponent} from './pages/portfolio/portfolio.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'bb',
   component: BannerComponent,
   pathMatch: 'full'
   },
@@ -16,7 +16,7 @@ const routes: Routes = [
     component: BannerComponent
   },
   {
-    path: 'portfolio',
+    path: '',
   component: PortfolioComponent,
        
   },
